@@ -1,17 +1,3 @@
-/* Color palette */
-/* header backgroupnd #fff */
-/* Hero background #2F303A */
-/* What we do background #E5E5E5 */
-/* Out team background #F5F4FA */
-/* Footer background #2F303A */
-
-/* Accent color #2196F3 */
-/* logo color #000 */
-/* Header nav link color #212121 */
-/* Header contacts color #757575 */
-/* Hero text color #fff */
-/* Footer co.ntacts color rgba(255, 255, 255, 0.6) */
-
 :root {
   --main-background-color: #fff;
   --main-text-color: #757575;
