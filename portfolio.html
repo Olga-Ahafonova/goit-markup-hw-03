@@ -7,102 +7,144 @@
     <title lang="en">WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Шапка сайта-->
-    <header>
-      <nav>
-        <a class="logo link" href="./index.html">Web<span class="logo-dark">Studio</span></a>
+    <header class="header">
+      <!---------Logo------>
+      <div class="header-container container">
+      <a class="header-logo logo link" href="./index.html">Web<span class="logo-dark">Studio</span></a>
+      <!--Navigation-->
+      <nav class="site-nav">
         <ul class="site-nav-list list">
-          <li><a class="site-nav-link link" href="./index.html">Студия</a></li>
-          <li><a class="site-nav-link link current" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="site-nav-link link" href="">Контакты</a></li>
+          <li class="site-nav-item"><a class="site-nav-link link" href="./index.html">Студия</a></li>
+          <li class="site-nav-item"><a class="site-nav-link link current" href="./portfolio.html">Портфолио</a></li>
+          <li class="site-nav-item"><a class="site-nav-link link" href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="contacts-list list">
-        <li>
+      <ul class="header-contacts list">
+        <li class="header-contacts-item">
           <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="header-contacts-item"><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
+      </div>    
     </header>
 
     <!--Примеры работ-->
     <main>
-      <section class="portfolio-section">
+      <section class="portfolio-section section">
+        <div class="container">
         <h1 class="visually-hidden">Примеры работ</h1>
         <!--Filter-->
         <ul class="filter-list list">
-          <li><button class="filter-item-button current" type="button">Все</button></li>
-          <li><button class="filter-item-button" type="button">Веб-сайты</button></li>
-          <li><button class="filter-item-button" type="button">Приложения</button></li>
-          <li><button class="filter-item-button" type="button">Дизайн</button></li>
-          <li><button class="filter-item-button" type="button">Маркетинг</button></li>
+          <li class="filter-item"><button class="filter-item-button current" type="button">Все</button></li>
+          <li class="filter-item"><button class="filter-item-button" type="button">Веб-сайты</button></li>
+          <li class="filter-item"><button class="filter-item-button" type="button">Приложения</button></li>
+          <li class="filter-item"><button class="filter-item-button" type="button">Дизайн</button></li>
+          <li class="filter-item"><button class="filter-item-button" type="button">Маркетинг</button></li>
         </ul>
         <!--Examples-->
         <ul class="examples-list list">
-          <li>
+          <li class="examples-item">
+          <div class="examples-item-thumb">
             <img src="./images/picture-1.jpg" width="370" height="294" alt="вебсайт компании" />
+          </div>
+          <div class="examples-item-footer">
             <h2 class="examples-item-title">Технокряк</h2>
             <p class="examples-item-category">Веб-сайт</p>
+          </div>
           </li>
-          <li>
+          <li class="examples-item">
+            <div class="examples-item-thumb">
             <img src="./images/picture-2.jpg" width="370" height="294" alt="баскетболисты" />
+          </div>
+          <div class="examples-item-footer">
             <h2 class="examples-item-title">Постер New Orlean vs Golden Star</h2>
             <p class="examples-item-category">Дизайн</p>
+          </div>
           </li>
-          <li>
+          <li class="examples-item">
+            <div class="examples-item-thumb">
             <img src="./images/picture-3.jpg" width="370" height="294" alt="рыбный ресторан" />
+          </div>
+          <div class="examples-item-footer">
             <h2 class="examples-item-title">Ресторан Seafood</h2>
             <p class="examples-item-category">Приложение</p>
+          </div>
           </li>
-          <li>
+          <li class="examples-item">
+            <div class="examples-item-thumb">
             <img src="./images/picture-4.jpg" width="370" height="294" alt="наушники" />
+          </div>
+          <div class="examples-item-footer">
             <h2 class="examples-item-title">Проект Prime</h2>
             <p class="examples-item-category">Маркетинг</p>
+          </div>
           </li>
-          <li>
+          <li class="examples-item">
+            <div class="examples-item-thumb">
             <img src="./images/picture-5.jpg" width="370" height="294" alt="фото коробок" />
+          </div>
+          <div class="examples-item-footer">
             <h2 class="examples-item-title">Проект Boxes</h2>
             <p class="examples-item-category">Приложение</p>
+          </div>
           </li>
-          <li>
+          <li class="examples-item">
+            <div class="examples-item-thumb">
             <img src="./images/picture-6.jpg" width="370" height="294" alt="монитор компьютера" />
+          </div>
+          <div class="examples-item-footer">
             <h2 class="examples-item-title">Inspiration has no Borders</h2>
             <p class="examples-item-category">Веб-сайт</p>
+          </div>
           </li>
-          <li>
+          <li class="examples-item">
+            <div class="examples-item-thumb">
             <img src="./images/picture-7.jpg" width="370" height="294" alt="фото книги" />
+          </div>
+          <div class="examples-item-footer">
             <h2 class="examples-item-title">Издание Limited Edition</h2>
             <p class="examples-item-category">Дизайн</p>
+          </div>
           </li>
-          <li>
+          <li class="examples-item">
+            <div class="examples-item-thumb">
             <img src="./images/picture-8.jpg" width="370" height="294" alt="фото бирки" />
+          </div>
+          <div class="examples-item-footer">
             <h2 class="examples-item-title">Проект LAB</h2>
             <p class="examples-item-category">Маркетинг</p>
+          </div>
           </li>
-          <li>
+          <li class="examples-item">
+            <div class="examples-item-thumb">
             <img src="./images/picture-9.jpg" width="370" height="294" alt="фото ноутбука" />
+          </div>
+          <div class="examples-item-footer">
             <h2 class="examples-item-title">Growing Business</h2>
             <p class="examples-item-category">Приложение</p>
+          </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <!--Футер-->
     <footer class="footer-section">
+      <div class="container">
       <a class="logo link" href="WebStudio">Web<span class="logo-light">Studio</span></a>
-      <address class="footer-adress">
+      <address class="footer-address">
         <ul class="list">
           <li>
             <a
-              class="footer-adress-link physical-adress link"
+              class="footer-address-link physical-address link"
               href="https://goo.gl/maps/ifttzKuWw7SdczAa6"
               target="_blank"
               rel="noopener nofollow"
@@ -110,11 +152,12 @@
             >
           </li>
           <li>
-            <a class="footer-adress-link link" href="mailto:info@example.com">info@example.com</a>
+            <a class="footer-address-link link" href="mailto:info@example.com">info@example.com</a>
           </li>
-          <li><a class="footer-adress-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li><a class="footer-address-link link" href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
